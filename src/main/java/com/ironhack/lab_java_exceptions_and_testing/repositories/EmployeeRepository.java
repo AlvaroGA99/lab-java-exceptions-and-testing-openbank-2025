@@ -1,7 +1,7 @@
-package com.ironhack.lab_java_add_and_update.repositories;
+package com.ironhack.lab_java_exceptions_and_testing.repositories;
 
-import com.ironhack.lab_java_add_and_update.EmployeeStatus;
-import com.ironhack.lab_java_add_and_update.models.Employee;
+import com.ironhack.lab_java_exceptions_and_testing.EmployeeStatus;
+import com.ironhack.lab_java_exceptions_and_testing.models.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

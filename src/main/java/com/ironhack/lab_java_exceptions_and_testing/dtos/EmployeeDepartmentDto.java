@@ -1,4 +1,4 @@
-package com.ironhack.lab_java_add_and_update.dtos;
+package com.ironhack.lab_java_exceptions_and_testing.dtos;
 
 public class EmployeeDepartmentDto {
     String department;

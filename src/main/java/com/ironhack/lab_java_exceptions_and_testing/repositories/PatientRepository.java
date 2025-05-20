@@ -1,6 +1,6 @@
-package com.ironhack.lab_java_add_and_update.repositories;
+package com.ironhack.lab_java_exceptions_and_testing.repositories;
 
-import com.ironhack.lab_java_add_and_update.models.Patient;
+import com.ironhack.lab_java_exceptions_and_testing.models.Patient;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

@@ -1,4 +1,4 @@
-package com.ironhack.lab_java_add_and_update;
+package com.ironhack.lab_java_exceptions_and_testing;
 
 public enum EmployeeStatus {
     ON_CALL,

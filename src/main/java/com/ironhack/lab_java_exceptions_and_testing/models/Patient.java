@@ -1,4 +1,4 @@
-package com.ironhack.lab_java_add_and_update.models;
+package com.ironhack.lab_java_exceptions_and_testing.models;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;

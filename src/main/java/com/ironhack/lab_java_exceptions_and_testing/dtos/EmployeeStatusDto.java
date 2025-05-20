@@ -1,6 +1,6 @@
-package com.ironhack.lab_java_add_and_update.dtos;
+package com.ironhack.lab_java_exceptions_and_testing.dtos;
 
-import com.ironhack.lab_java_add_and_update.EmployeeStatus;
+import com.ironhack.lab_java_exceptions_and_testing.EmployeeStatus;
 
 public class EmployeeStatusDto {
     EmployeeStatus status;

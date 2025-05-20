@@ -1,10 +1,10 @@
-package com.ironhack.lab_java_add_and_update.controllers;
+package com.ironhack.lab_java_exceptions_and_testing.controllers;
 
-import com.ironhack.lab_java_add_and_update.EmployeeStatus;
-import com.ironhack.lab_java_add_and_update.dtos.EmployeeDepartmentDto;
-import com.ironhack.lab_java_add_and_update.dtos.EmployeeStatusDto;
-import com.ironhack.lab_java_add_and_update.models.Employee;
-import com.ironhack.lab_java_add_and_update.repositories.EmployeeRepository;
+import com.ironhack.lab_java_exceptions_and_testing.EmployeeStatus;
+import com.ironhack.lab_java_exceptions_and_testing.dtos.EmployeeDepartmentDto;
+import com.ironhack.lab_java_exceptions_and_testing.dtos.EmployeeStatusDto;
+import com.ironhack.lab_java_exceptions_and_testing.models.Employee;
+import com.ironhack.lab_java_exceptions_and_testing.repositories.EmployeeRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -28,19 +28,19 @@ public class EmployeeController {
 
     @GetMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public Employee getPatientById(@PathVariable Long id) {
+    public Employee getEmployeeById(@PathVariable Long id) {
         return employeeRepository.findById(id).orElseThrow( () -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Patient not found"));
     }
 
     @GetMapping(params = "status")
     @ResponseStatus(HttpStatus.OK)
-    public List<Employee> getPatientsByStatus(@RequestParam EmployeeStatus status) {
+    public List<Employee> getEmployeesByStatus(@RequestParam EmployeeStatus status) {
         return employeeRepository.findByStatus(status);
     }
 
     @GetMapping(params = "department")
     @ResponseStatus(HttpStatus.OK)
-    public List<Employee> getPatientsByDepartment(@RequestParam String department) {
+    public List<Employee> getEmployeesByDepartment(@RequestParam String department) {
         return employeeRepository.findByDepartment(department);
     }
 

@@ -1,7 +1,7 @@
-package com.ironhack.lab_java_add_and_update.controllers;
+package com.ironhack.lab_java_exceptions_and_testing.controllers;
 
-import com.ironhack.lab_java_add_and_update.models.Patient;
-import com.ironhack.lab_java_add_and_update.repositories.PatientRepository;
+import com.ironhack.lab_java_exceptions_and_testing.models.Patient;
+import com.ironhack.lab_java_exceptions_and_testing.repositories.PatientRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
